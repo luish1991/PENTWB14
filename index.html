@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>PENTWB14</title>
+        <style type="text/css">
+            #container{
+                    margin-left: 45%;
+                    margin-top: 04%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <input type="text" id="entrada" placeholder="Ingresa palabra" />
+            <input type="button" id="boton" value="Procesar"/>
+            <br />
+            <table>
+                <tr>
+                    <td>Mayusculas:</td>
+                    <td><strong><span id="sp1"></span></strong></td>
+                </tr>
+                 <tr>
+                    <td>Minusculas:</td>
+                    <td><strong><span id="sp2"></span></strong></td>
+                </tr>
+                 <tr>
+                    <td>Invertida:</td>
+                    <td><strong><span id="sp3"></span></strong></td>
+                </tr>
+                 <tr>
+                    <td>Tama&ntilde;o:</td>
+                    <td><strong><span id="sp4"></span></strong></td>
+                </tr>
+                 <tr>
+                    <td>&iquest;Palindromo?:</td>
+                    <td><strong><span id="sp5"></span></strong></td>
+                </tr>
+            </table>
+        </div>
+        <script src="bundle.js" ></script>
+        <script>
+            var boton = document.getElementById("boton");
+            boton.addEventListener("click",procesar);
+        </script>
+    </body>
+</html>
